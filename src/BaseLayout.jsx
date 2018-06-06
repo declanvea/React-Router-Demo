@@ -10,7 +10,9 @@ export default class BaseLayout extends React.Component {
                     <Link to="/dogs">Dogs</Link>
                     <Link to="/penguins">Penguins</Link>
                 </div>
-                {this.props.children}
+                <div className="center">
+                    <img src={this.props.src} alt={this.props.alt} />
+                </div>
             </React.Fragment>
         );
     }
